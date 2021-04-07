@@ -5,10 +5,9 @@
  * when is part of the cujoJS family of libraries (http://cujojs.com/)
  * @author Brian Cavalier
  * @author John Hann
+ * @author Danny Paz
  */
-(function(define) { 'use strict';
-define(function (require) {
-
+module.exports = function () {
 	var timed = require('./lib/decorators/timed');
 	var array = require('./lib/decorators/array');
 	var flow = require('./lib/decorators/flow');
@@ -224,5 +223,4 @@ define(function (require) {
 	}
 
 	return when;
-});
-})(typeof define === 'function' && define.amd ? define : function (factory) { module.exports = factory(require); });
+};
